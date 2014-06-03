@@ -38,7 +38,7 @@ VisualSFM_linux_64bit.zip:
 	wget http://ccwu.me/vsfm/download/VisualSFM_linux_64bit.zip
 
 install-reqs:
-	sudo apt-get install libgtk2.0-dev freeglut3-dev libdevil-dev
+	sudo apt-get install libgtk2.0-dev freeglut3-dev libdevil-dev libglew-dev
 
 clean:
 	$(RM) VisualSFM_linux_64bit.zip
