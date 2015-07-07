@@ -8,7 +8,7 @@ vsfm/bin/libpba.so: pba/bin/libpba_no_gpu.so
 	ln -s ../../$< $@
 
 pba/bin/libpba_no_gpu.so: pba
-	mv makefile_no_gpu makefile; make
+	cd $< && mv makefile makefile_orig; mv makefile_no_gpu makefile; make
 
 pba: pba_v1.0.5.zip
 	unzip $<
